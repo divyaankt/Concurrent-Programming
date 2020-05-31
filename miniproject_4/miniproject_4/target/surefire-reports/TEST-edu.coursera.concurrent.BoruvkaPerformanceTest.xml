@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.coursera.concurrent.BoruvkaPerformanceTest" time="230.405" tests="2" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.2+9"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.2\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\z0045tpk\Desktop\PCDPJava\Concurrent-Programming\miniproject_4\miniproject_4"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\z0045tpk\Desktop\PCDPJava\Concurrent-Programming\miniproject_4\miniproject_4"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="11.0.2+9"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\z0045tpk\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 2019.2\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 2019.2\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\bin;C:\Program Files\Java\jdk-11.0.2\bin;C:\Python38\Scripts\;C:\Python38\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Files\fortran\bin\ia32;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\cygwin64\bin;C:\Go\bin;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jre1.8.0_251\bin;C:\Program Files (x86)\Java\jre1.8.0_251\bin;C:\Users\z0045tpk\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\z0045tpk\AppData\Local\Programs\Python\Python38-32\;C:\Users\z0045tpk\AppData\Local\Microsoft\WindowsApps;;C:\Users\z0045tpk\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\z0045tpk\go\bin;C:\Users\z0045tpk\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 2019.2\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\z0045tpk"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="idea.version2019.2.4" value="true"/>
+    <property name="user.name" value="z0045tpk"/>
+    <property name="java.class.path" value="C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 2019.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.2.4 test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.2"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.2"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 2019.2\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2019-01-15"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testInputUSAroadFLA" classname="edu.coursera.concurrent.BoruvkaPerformanceTest" time="113.842">
+    <failure message="Expected speedup of at least 1.700000x, but was 1.294919x" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expected speedup of at least 1.700000x, but was 1.294919x
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.concurrent.BoruvkaPerformanceTest.testInputUSAroadFLA(BoruvkaPerformanceTest.java:113)
+</failure>
+    <system-err><![CDATA[  src/main/resources/boruvka/USA-road-d.FLA.gr.gz - edu.coursera.concurrent.boruvka.sequential.SeqBoruvka - 2893
+  src/main/resources/boruvka/USA-road-d.FLA.gr.gz - edu.coursera.concurrent.boruvka.sequential.SeqBoruvka - 3101
+  src/main/resources/boruvka/USA-road-d.FLA.gr.gz - edu.coursera.concurrent.boruvka.sequential.SeqBoruvka - 2472
+  src/main/resources/boruvka/USA-road-d.FLA.gr.gz - edu.coursera.concurrent.boruvka.sequential.SeqBoruvka - 3338
+  src/main/resources/boruvka/USA-road-d.FLA.gr.gz - edu.coursera.concurrent.boruvka.sequential.SeqBoruvka - 3389
+  src/main/resources/boruvka/USA-road-d.FLA.gr.gz - edu.coursera.concurrent.ParBoruvka - 3870
+  src/main/resources/boruvka/USA-road-d.FLA.gr.gz - edu.coursera.concurrent.ParBoruvka - 3557
+  src/main/resources/boruvka/USA-road-d.FLA.gr.gz - edu.coursera.concurrent.ParBoruvka - 1909
+  src/main/resources/boruvka/USA-road-d.FLA.gr.gz - edu.coursera.concurrent.ParBoruvka - 3112
+  src/main/resources/boruvka/USA-road-d.FLA.gr.gz - edu.coursera.concurrent.ParBoruvka - 2716
+]]></system-err>
+  </testcase>
+  <testcase name="testInputUSAroadNE" classname="edu.coursera.concurrent.BoruvkaPerformanceTest" time="116.563">
+    <failure message="expected:&lt;1524452&gt; but was:&lt;1524459&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<1524452> but was:<1524459>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:133)
+	at junit.framework.Assert.assertEquals(Assert.java:139)
+	at edu.coursera.concurrent.BoruvkaPerformanceTest.testInputUSAroadNE(BoruvkaPerformanceTest.java:121)
+]]></failure>
+    <system-err><![CDATA[  src/main/resources/boruvka/USA-road-d.NE.gr.gz - edu.coursera.concurrent.boruvka.sequential.SeqBoruvka - 3687
+  src/main/resources/boruvka/USA-road-d.NE.gr.gz - edu.coursera.concurrent.boruvka.sequential.SeqBoruvka - 2974
+  src/main/resources/boruvka/USA-road-d.NE.gr.gz - edu.coursera.concurrent.boruvka.sequential.SeqBoruvka - 3021
+  src/main/resources/boruvka/USA-road-d.NE.gr.gz - edu.coursera.concurrent.boruvka.sequential.SeqBoruvka - 3046
+  src/main/resources/boruvka/USA-road-d.NE.gr.gz - edu.coursera.concurrent.boruvka.sequential.SeqBoruvka - 2959
+  src/main/resources/boruvka/USA-road-d.NE.gr.gz - edu.coursera.concurrent.ParBoruvka - 4039
+  src/main/resources/boruvka/USA-road-d.NE.gr.gz - edu.coursera.concurrent.ParBoruvka - 4181
+  src/main/resources/boruvka/USA-road-d.NE.gr.gz - edu.coursera.concurrent.ParBoruvka - 4432
+  src/main/resources/boruvka/USA-road-d.NE.gr.gz - edu.coursera.concurrent.ParBoruvka - 5509
+  src/main/resources/boruvka/USA-road-d.NE.gr.gz - edu.coursera.concurrent.ParBoruvka - 4089
+]]></system-err>
+  </testcase>
+</testsuite>
